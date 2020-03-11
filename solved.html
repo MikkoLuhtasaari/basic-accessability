@@ -5,54 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Demoing accessability</title>
+    <title>Demoing accessibility</title>
 </head>
 
 <body>
     <header>
         <h1>
-            Accessability demo
+            Accessibility demo
         </h1>
     </header>
     <nav>
         <ul>
             <li>
-                <a href="www.google.com">Google</a>
+                <a href="https://google.com">Google</a>
             </li>
             <li>
-                <a href="www.tuni.com">TUNI</a>
+                <a href="https://tuni.com">TUNI</a>
             </li>
             <li>
                 <a href="https://plus.tuni.fi/">Plussa</a>
             </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/">Mozilla</a>
+            </li>
+            <li>
+                <a href="https://www.google.com/chrome/">Chrome</a>
+            </li>
         </ul>
     </nav>
     <hr>
-    <form>
-        <label for="name">Name:</label>
-        <input id="name" type="text" autocomplete="off">
-        <br>
-        <label for="homePage">Home page:</label>
-        <input id="homePage" type="url" autocomplete="off">
-        <br>
-        <label for="email">Email:</label>
-        <input id="email" type="email" autocomplete="off">
-        <br>
-        <label for="favcity">Choose your favorite city</label>
-        <select id="favcity" name="select">
-            <optgroup label="Europe">
-                <option value="1">Amsterdam</option>
-                <option value="2">London</option>
-                <option value="3">Moscow</option>
-            </optgroup>
-            <optgroup label="North America">
-                <option value="4">Los Angeles</option>
-                <option value="5">New York</option>
-            </optgroup>
-        </select>
-        <br>
-        <button type="submit" value="Submit">Submit</button>
-    </form>
+    <main>
+        <h2 id="information">Your information</h2>
+        <form role="form" aria-labelledby="information">
+            <label for="name">Name:</label>
+            <input id="name" type="text" autocomplete="off">
+            <br>
+            <label for="homePage">Home page:</label>
+            <input id="homePage" type="url" autocomplete="off">
+            <br>
+            <label for="email">Email:</label>
+            <input aria-alertdialog id="email" type="email" autocomplete="off">
+            <br>
+            <label for="pass">Password (8 characters minimum):</label>
+            <input type="password" id="password" minlength="8">
+            <br>
+            <label for="favcity">Choose your favorite city</label>
+            <select id="favcity" name="select">
+                <optgroup label="Europe">
+                    <option value="1">Amsterdam</option>
+                    <option value="2">London</option>
+                    <option value="3">Moscow</option>
+                </optgroup>
+                <optgroup label="North America">
+                    <option value="4">Los Angeles</option>
+                    <option value="5">New York</option>
+                </optgroup>
+            </select>
+            <br>
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <img src="http://www.w3.org/WAI/intro/alt-logo.png" alt="image of logo; HTML markup img alt='Web Accessibility Initiative logo'">
+    </footer>
 
 </body>
 
