@@ -1,0 +1,42 @@
+alt + shift + a kahdesti sammuttaa ja laittaa takasin
+alt + shift + nuolet 
+tabulaattori eteen
+shift + tabulaattori taakse
+alt + shift + p -> alt + shift + h
+
+<header> h1:lle
+
+<main> formille
+
+<form role="form" aria-labelledby="information">
+
+<label for="name">Name:</label>
+<input id="name" type="text" autocomplete="off">
+
+<label for="homePage">Home page:</label>
+<input id="homePage" type="url" autocomplete="off">
+
+<label for="email">Email:</label>
+<input aria-alertdialog id="email" type="email" autocomplete="off">
+
+<label for="pass">Password (8 characters minimum):</label>
+<input type="password" id="password" minlength="8">
+
+<label for="favcity">Choose your favorite city</label>
+            <select id="favcity" name="select">
+                <optgroup label="Europe">
+                    <option value="1">Amsterdam</option>
+                    <option value="2">London</option>
+                    <option value="3">Moscow</option>
+                </optgroup>
+                <optgroup label="North America">
+                    <option value="4">Los Angeles</option>
+                    <option value="5">New York</option>
+                </optgroup>
+            </select>
+
+<button type="submit" value="Submit">Submit</button>
+
+<footer>
+        <img src="http://www.w3.org/WAI/intro/alt-logo.png" alt="image of logo; HTML markup img alt='Web Accessibility Initiative logo'">
+</footer>
